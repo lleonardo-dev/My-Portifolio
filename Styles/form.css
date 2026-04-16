@@ -1,0 +1,38 @@
+
+.formulario {
+  background: linear-gradient(135deg, #1f1f1f, #121212, #0a0a0a);
+  border: 1px solid #1f1f1f;
+  border-radius: 15px;
+  padding: 2rem;
+  position: sticky;
+  top: 2rem;
+   width: 550px;
+  height: 700px;
+  margin-top: 70px;
+
+}
+
+.formulario > h1{
+
+ text-align: center;
+ color: var(--cinza-color);
+ margin-bottom: 30px;
+ display: block;
+
+
+}
+
+.container-form > label{
+
+
+    color: var(--cinza-color);
+    background-color:   var(--body-color);;
+    border-radius: 10px;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    padding-left: 20px;
+    padding-right: 60px;
+    border: 1px solid var(--escuro-color);
+    color: aliceblue;
+}
+
