@@ -1,0 +1,20 @@
+footer {
+  background-color: var(--body-color);
+
+
+  border: #080c10 solid 1px;
+  padding: 20px;
+
+  color: var(--cinza-escuro-color);
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 13px;
+  text-align: center;
+
+
+}
+
+footer h1 {
+  font-size: 15px;
+  margin-bottom: 10px; 
+font-family: 'Space Grotesk', sans-serif;
+}

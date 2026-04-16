@@ -1,0 +1,123 @@
+@charset "UTF-8";
+
+
+#contato{
+ background-color: black;
+ max-width: 100%;
+  /* remove o limite de largura */
+  min-height: 100vh;
+  /* ocupa a altura toda da tela */
+  padding: 4rem 5rem;
+  /* espaçamento lateral confortável */
+  display: block;
+  box-sizing: border-box;
+
+
+}
+
+
+#contato > h1{
+
+
+ color: #fff;
+    font-size: 3rem;
+    text-align: center;
+    font-family: 'Space Grotesk', sans-serif;
+    margin-top: 60px;
+
+}
+
+#contato > h2{
+  color: var(--cinza-escuro-color);
+  font-family: 'Space Grotesk', sans-serif;
+    font-size: 1.1rem;
+  color: #a1a1aa;
+    padding-top: 20px;
+ text-align: center;
+}
+
+
+.container-info > h1{
+
+    color: var(--cinza-escuro-color);
+    font-family: 'Space Grotesk', sans-serif;
+        font-size: 1.1rem;
+    color: #a1a1aa;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        
+    
+ 
+
+
+}
+
+.info-cards{
+  
+  width: 550px;
+  height: 170px;
+  background: linear-gradient(135deg, #1f1f1f, #121212, #0a0a0a);
+  border: 1px solid #1f1f1f;
+  border-radius: 15px;
+  margin-bottom: 20px;
+
+
+}
+
+.container-info > a{
+
+
+    display: block;      /* Força a quebra de linha (um embaixo do outro) */
+    width: fit-content;  /* Continua segurando a largura para não pegar a tela toda */
+    text-decoration: none;
+    
+
+
+}
+
+.info-cards > h1{
+  color: #fff;
+  font-size: 1.3rem;
+  font-family: 'Space Grotesk', sans-serif;
+  margin-left: 20px;
+  
+
+}
+
+.info-cards > h2{
+
+   font-family: 'Space Grotesk', sans-serif;
+        font-size: 1rem;
+    color: #a1a1aa;
+    margin-left: 20px;
+}
+
+.info-cards > h3{
+
+
+  margin-left: 1rem;
+  margin-left: 20px;
+   color: var(--blue-color);
+  font-family: 'Space Grotesk', sans-serif;
+
+
+
+}
+
+
+.info-cards > img{
+  width: 50px;
+  height: 50px;
+  margin-left: 20px;
+  margin-top: 10px;  
+  padding: 0px;
+
+}
+
+
+
+.info-cards:hover{
+  background: linear-gradient(135deg, #1f1f1f, #121212, #0a0a0a);
+  border: 1px solid var(--blue-color);
+  border-radius: 15px;
+  transition: all 0.3s ease; }
