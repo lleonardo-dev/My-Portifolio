@@ -35,6 +35,10 @@
 
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
 
   background-color: var(--body-color);
@@ -933,7 +937,17 @@ place-items: center;
 animation: botao 0.5s ease-in-out normal forwards;
 }
 
+.navhome:active{
 
+ color: #fff;
+
+
+
+}
+
+.navhome:focus{
+
+ color: #fff;}
 
 
 

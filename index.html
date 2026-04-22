@@ -9,6 +9,9 @@
     <link rel="stylesheet" href="Styles/responsi.css">
     <link rel="stylesheet" href="Styles/footer.css">
     <link rel="stylesheet" href="Styles/contato.css">
+    <script src="form.js"></script>
+    
+
     <link
         href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;700&amp ;family=JetBrains+Mono:wght@400;500&amp ;display=swap"
         rel="stylesheet">
@@ -28,8 +31,6 @@
 
 
 
-
-
 </head>
 
 <body>
@@ -42,11 +43,11 @@
 
 
             <nav class="navhome">
+                
 
-
-                <a href="#sobre ">Sobre </a>
+                <a href="#sobre">Sobre </a>
                 <a href="#skills">Skills</a>
-                <a href="#certificacoes">Certificaçôes</a>
+                <a href href="#certificacoes">Certificaçôes</a>
                 <a href="#experiencias">Experiências</a>
                 <a href="#contato">Contato</a>
 
@@ -81,7 +82,7 @@
 
             <div class="firstbuttom">
 
-                <button id="falar"><a href="#contato"></a>Falar comigo <img
+                <button onclick="falarcomigo()"      id="falar"><a href="#contato"></a>Falar comigo <img
                         src="data:image/png;base64,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"
                         alt="external-phone-call-e-commerce-fauzidea-detailed-outline-fauzidea"></button>
 
@@ -483,25 +484,46 @@
             </div>
     
     
-                     <div class=formulario>
+                 <div class=formulario>
     
     
-                    <h1>Envie uma mensagem</h1>
+                    <h1>Envie uma mensagem </h1>
     
                     <form id="form">
     
-                        <div class="container-form">
+                        <div class="box-form">
     
-                            <label for="user.name">Nome do usuario</label>
+                           
     
                             <input type="text" id="user.name" placeholder="Digite seu nome..." >
-    
                         </div>
-    
+
+
+                        <div class="box-form">
+
+                        
+                            <input type="text" id="user.email" placeholder="Digite seu e-mail..." >
+
+
+                        </div>
+
+
+
+                        <div class="box-form">
+                            
+                            <textarea id="user.message" placeholder="Digite sua mensagem..." ></textarea>
+
+
+                        </div>
+
+                                <div id="button-form"><button  type="submit">Enviar Mensagem</button>
+                                
+                                </div>
+
                     </form>
     
     
-    
+                    
     
     
     
@@ -532,7 +554,11 @@
 
 </footer>
 
+<script>
 
+
+    
+</script>
 
 
 
