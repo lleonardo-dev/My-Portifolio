@@ -1,42 +1,86 @@
 @charset "UTF-8";
 
-@media (max-width: 1200px) {
-
-
-    main {
-        width: 100%;
-
-    }
-
-    #text-intro>h1 {
-        text-align: center;
-
-    }
-
-
-    .card3 {
-
-        width: 500px;
-        height: 450px;
 
 
 
 
 
-    }
+/* ============================================================
+   responsi.css — Media Queries 
+   
+   Breakpoints:
+     • Mobile  : até 480px
+     • Tablet  : 481px – 768px
+     • Notebook: 769px – 1024px
+   ============================================================ */
 
 
-    .card4 {
+/* ──────────────────────────────────────────────
+   NOTEBOOK / TABLET GRANDE  (≤ 1024px)
+────────────────────────────────────────────── */
+@media (max-width: 1024px) {}
 
-        width: 500px;
-        height: 450px;
-
-    }
-
-
-
-
-
+  /* Header */
+  
+  
+  /* Seção Sobre */
 
 
-}
+  /* Cards de Skills */
+  
+
+  /* Certificações */
+ 
+
+  /* Contato */
+
+
+
+
+/* ──────────────────────────────────────────────
+   TABLET  (≤ 768px)
+────────────────────────────────────────────── */
+
+@media (max-width: 768px) {}
+
+  /* ── Header ── */
+
+
+ 
+
+  /* ── Seção Sobre ── */
+
+
+
+  /* ── Seção Skills ── */
+ 
+
+  /* ── Seção Certificações ── */
+  
+
+  /* ── Seção Contato ── */
+  
+
+  /* ── Footer ── */
+  
+
+
+/* ──────────────────────────────────────────────
+   MOBILE  (≤ 480px)
+────────────────────────────────────────────── */
+@media (max-width: 480px) 
+
+  /* ── Header ── */
+ 
+
+  /* ── Seção Sobre ── */
+
+
+  /* ── Cards de Skills ── */
+  
+ 
+
+  /* ── Contato ── */
+ 
+
+  /* ── Footer ── */
