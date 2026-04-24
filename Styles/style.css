@@ -5,7 +5,21 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Domine:wght@400..700&display=swap');
 
+html,
+body {
+  overflow-x: hidden;
+  /* Evita que o AOS quebre a largura da página */
+}
 
+[data-aos] {
+  pointer-events: none;
+  /* Garante que a animação não bloqueie cliques */
+}
+
+.aos-animate {
+  pointer-events: auto;
+  /* Devolve os cliques após a animação */
+}
 
 
 
@@ -36,7 +50,7 @@
 }
 
 html {
-    scroll-behavior: smooth;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -55,8 +69,8 @@ header {
   z-index: 99;
   border-bottom: 1px solid var(--cinza-escuro-color);
   padding-bottom: 50px;
-  
-  background-color: rgb(9, 14, 19 , 0.9);
+
+  background-color: rgb(9, 14, 19, 0.9);
 }
 
 .header>section {
@@ -754,7 +768,7 @@ button:hover {
   padding: 4rem 5rem;
   display: block;
   box-sizing: border-box;
-  
+
 }
 
 
@@ -776,15 +790,16 @@ button:hover {
 }
 
 
-.contaider-certi{   
- 
+.contaider-certi {
+
 
 
   margin-left: 100px;
-   display: grid;
-  grid-template-columns: 1fr 1fr;  /* 2 colunas iguais */
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  /* 2 colunas iguais */
   gap: 10px;
-  
+
   list-style: none;
 
 
@@ -793,7 +808,7 @@ button:hover {
 }
 
 
-.certi1{
+.certi1 {
 
   background: linear-gradient(135deg, #1f1f1f, #121212, #0a0a0a);
 
@@ -815,14 +830,14 @@ button:hover {
   place-items: center;
   margin-top: 50px;
 
-  
+
 
 }
 
-.certi1 > img{
+.certi1>img {
 
- align-items: center;
- text-align: center;
+  align-items: center;
+  text-align: center;
 
 
 }
@@ -831,7 +846,7 @@ button:hover {
 .certi1:hover {
 
 
- transition: 1s;
+  transition: 1s;
 
   border: 1px solid #ab00fb;
   animation: botao 0.5s ease-in-out normal forwards;
@@ -841,11 +856,11 @@ button:hover {
 }
 
 
-.certi1 > img {
+.certi1>img {
   margin: 0px;
   padding: 0px;
-   display: block;
-   align-items: center;
+  display: block;
+  align-items: center;
 
   object-fit: contain;
   width: 150px;
@@ -856,17 +871,17 @@ button:hover {
 }
 
 
-.certi2 > img {
+.certi2>img {
   margin: 0px;
   padding: 0px;
   display: block;
-   align-items: center;
+  align-items: center;
   object-fit: contain;
   width: 150px;
   margin-top: 30px;
   margin-bottom: 100px;
   border-bottom: 1px solid #ffffff;
-  
+
 
 
 }
@@ -877,11 +892,11 @@ button:hover {
 
 .cardli {
 
-  
+
 
   text-decoration: none;
   color: var(--cinza-escuro-color);
-    font-family: "Domine", serif;
+  font-family: "Domine", serif;
   font-optical-sizing: auto;
   font-weight: weight;
   font-style: normal;
@@ -896,7 +911,7 @@ button:hover {
 
 
 
-.certi2{
+.certi2 {
 
   background: linear-gradient(135deg, #1f1f1f, #121212, #0a0a0a);
 
@@ -921,9 +936,9 @@ button:hover {
 
 }
 
-.certi2 > img{
+.certi2>img {
 
-place-items: center;
+  place-items: center;
 
   align-items: center;
   text-align: center;
@@ -931,35 +946,21 @@ place-items: center;
 
 
 .certi2:hover {
- 
+
   border: 1px solid #ffffff;
-  transition: 1s; 
-animation: botao 0.5s ease-in-out normal forwards;
+  transition: 1s;
+  animation: botao 0.5s ease-in-out normal forwards;
 }
 
-.navhome:active{
+.navhome:active {
 
- color: #fff;
+  color: #fff;
 
 
 
 }
 
-.navhome:focus{
+.navhome:focus {
 
- color: #fff;}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+  color: #fff;
+}

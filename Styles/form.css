@@ -52,9 +52,9 @@ form>.box-form>input {
 }
 
 
-#digite-form > input{
+#digite-form>input {
 
- width: 500px;
+  width: 500px;
   height: 30px;
   margin-bottom: 10px;
   border-radius: 10px;
@@ -66,7 +66,8 @@ form>.box-form>input {
   position: relative;
 
 }
-#digite-form > input:focus {
+
+#digite-form>input:focus {
 
   border: 1px solid var(--blue-color);
   outline: none;
@@ -94,7 +95,7 @@ form>.box-form>input:focus {
 
 }
 
-#button-form{
+#button-form {
 
 
   text-align: center;
@@ -102,7 +103,7 @@ form>.box-form>input:focus {
 
 }
 
-#button-form > button {
+#button-form>button {
 
   padding-top: 20px;
   padding-bottom: 20px;

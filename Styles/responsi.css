@@ -20,19 +20,19 @@
 ────────────────────────────────────────────── */
 @media (max-width: 1024px) {}
 
-  /* Header */
-  
-  
-  /* Seção Sobre */
+/* Header */
 
 
-  /* Cards de Skills */
-  
+/* Seção Sobre */
 
-  /* Certificações */
- 
 
-  /* Contato */
+/* Cards de Skills */
+
+
+/* Certificações */
+
+
+/* Contato */
 
 
 
@@ -43,44 +43,44 @@
 
 @media (max-width: 768px) {}
 
-  /* ── Header ── */
-
-
- 
-
-  /* ── Seção Sobre ── */
+/* ── Header ── */
 
 
 
-  /* ── Seção Skills ── */
- 
 
-  /* ── Seção Certificações ── */
-  
+/* ── Seção Sobre ── */
 
-  /* ── Seção Contato ── */
-  
 
-  /* ── Footer ── */
-  
+
+/* ── Seção Skills ── */
+
+
+/* ── Seção Certificações ── */
+
+
+/* ── Seção Contato ── */
+
+
+/* ── Footer ── */
+
 
 
 /* ──────────────────────────────────────────────
    MOBILE  (≤ 480px)
 ────────────────────────────────────────────── */
-@media (max-width: 480px) 
+@media (max-width: 480px) {}
 
-  /* ── Header ── */
- 
-
-  /* ── Seção Sobre ── */
+/* ── Header ── */
 
 
-  /* ── Cards de Skills ── */
-  
- 
+/* ── Seção Sobre ── */
 
-  /* ── Contato ── */
- 
 
-  /* ── Footer ── */
+/* ── Cards de Skills ── */
+
+
+
+/* ── Contato ── */
+
+
+/* ── Footer ── */
