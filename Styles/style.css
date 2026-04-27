@@ -970,3 +970,6 @@ button:hover {
     opacity: 0; /* Começa invisível para o Motion assumir o controle */
     will-change: transform, opacity; /* Otimização de performance (GPU) */
 }
+
+
+

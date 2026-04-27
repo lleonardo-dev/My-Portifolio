@@ -1,5 +1,7 @@
 import { animate, scroll , frame } from "https://cdn.jsdelivr.net/npm/motion@12.38.0/+esm"
 
+
+
 // Efect of rolling the cards!!
 const cards = document.querySelectorAll(".img-container > div");
 
@@ -19,10 +21,12 @@ cards.forEach((item) => {
     );
 });
 
+// End efect of rolling the cards!!
 
 
 
 
+   
 
  
 
