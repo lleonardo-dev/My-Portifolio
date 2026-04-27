@@ -1,0 +1,118 @@
+.formulario {
+  background: linear-gradient(135deg, #1f1f1f, #121212, #0a0a0a);
+  border: 1px solid #1f1f1f;
+  border-radius: 15px;
+  padding: 2rem;
+  position: sticky;
+  top: 2rem;
+  width: 550px;
+  height: 700px;
+  margin-top: 70px;
+
+}
+
+.formulario:hover {
+  border: 1px solid var(--blue-color);
+  transition: 0.3s;
+}
+
+.formulario>h1 {
+
+  text-align: center;
+  color: var(--cinza-color);
+  margin-bottom: 30px;
+  display: block;
+
+
+}
+
+
+
+form>.box-form>textarea {
+  width: 100%;
+  height: 150px;
+  border-radius: 10px;
+  padding: 20px;
+  border: 1px solid var(--escuro-color);
+  background-color: var(--body-color);
+  color: aliceblue;
+}
+
+form>.box-form>input {
+  width: 500px;
+  height: 30px;
+  margin-bottom: 10px;
+  border-radius: 10px;
+  padding: 20px;
+  border: 1px solid var(--cinza-color);
+  background-color: var(--body-color);
+  color: rgb(255, 255, 255);
+  position: relative;
+
+}
+
+
+#digite-form>input {
+
+  width: 500px;
+  height: 30px;
+  margin-bottom: 10px;
+  border-radius: 10px;
+  padding: 20px;
+  padding-bottom: 200px;
+  border: 1px solid var(--cinza-color);
+  background-color: var(--body-color);
+  color: rgb(255, 255, 255);
+  position: relative;
+
+}
+
+#digite-form>input:focus {
+
+  border: 1px solid var(--blue-color);
+  outline: none;
+
+
+
+}
+
+
+
+
+form>.box-form>input:focus {
+
+  border: 1px solid var(--blue-color);
+  outline: none;
+
+
+
+}
+
+#button-form>button {
+
+
+  cursor: pointer;
+
+}
+
+#button-form {
+
+
+  text-align: center;
+
+
+}
+
+#button-form>button {
+
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 90px;
+  padding-right: 90px;
+  margin-top: 15px;
+  background-color: rgb(0, 0, 0);
+  color: #fff;
+  border-radius: 20px;
+  border: solid 1px var(--blue-color);
+
+}
