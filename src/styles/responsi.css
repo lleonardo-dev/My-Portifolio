@@ -18,69 +18,166 @@
 /* ──────────────────────────────────────────────
    NOTEBOOK / TABLET GRANDE  (≤ 1024px)
 ────────────────────────────────────────────── */
-@media (max-width: 1024px) {}
+@media (max-width: 1024px) {
+  /* ── Cards de Skills ── */
+  .container-cards {
+    flex-direction: column;
+  }
+  
+  .card1, .card2, .card3, .card4 {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    margin-top: 40px;
+    margin-right: 0;
+    padding-bottom: 20px;
+  }
 
-/* Header */
+  /* ── Certificações ── */
+  .contaider-certi {
+    grid-template-columns: 1fr;
+    margin-left: 0;
+    place-items: center;
+  }
 
+  .certi1, .certi2 {
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+    padding-bottom: 20px;
+  }
 
-/* Seção Sobre */
+  /* ── Contato ── */
+  .contato-wrapper {
+    gap: 2rem;
+  }
+  
+  .info-cards, .formulario {
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
+    height: auto;
+  }
 
-
-/* Cards de Skills */
-
-
-/* Certificações */
-
-
-/* Contato */
-
+  form>.box-form>input, #digite-form>input {
+    width: 100%;
+    box-sizing: border-box;
+  }
+}
 
 
 
 /* ──────────────────────────────────────────────
    TABLET  (≤ 768px)
 ────────────────────────────────────────────── */
+@media (max-width: 768px) {
+  /* ── Global ── */
+  #skills, #certificacoes, #contato {
+    padding: 3rem 2rem;
+  }
 
-@media (max-width: 768px) {}
+  /* ── Header ── */
+  .header > section {
+    flex-direction: column;
+    justify-content: center;
+  }
+  section>a>h1 {
+    left: 0;
+    top: 0;
+    margin-top: 20px;
+  }
+  section>nav {
+    top: 0;
+    margin-left: 0;
+    margin-top: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  header {
+    padding-bottom: 20px;
+  }
 
-/* ── Header ── */
+  /* ── Seção Sobre ── */
+  #text-intro>h1 { font-size: 3.5rem; }
+  #text-intro>h2 { font-size: 2rem; }
+  #text-intro>p { font-size: 1rem; }
+  
+  .firstbuttom {
+    left: 0;
+    top: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 100%;
+    max-width: 400px;
+  }
+  .firstbuttom button {
+    width: 100%;
+    right: 0;
+  }
 
-
-
-
-/* ── Seção Sobre ── */
-
-
-
-/* ── Seção Skills ── */
-
-
-/* ── Seção Certificações ── */
-
-
-/* ── Seção Contato ── */
-
-
-/* ── Footer ── */
-
+  /* ── Seção Contato ── */
+  .contato-wrapper {
+    grid-template-columns: 1fr;
+  }
+  
+  .formulario {
+    position: relative; /* Remove o sticky (fixo) da tela */
+    top: 0;
+    height: auto;
+    margin-top: 30px;
+    padding: 1.5rem;
+  }
+  
+  #button-form>button {
+    width: 100%;
+    padding: 15px 0;
+  }
+}
 
 
 /* ──────────────────────────────────────────────
    MOBILE  (≤ 480px)
 ────────────────────────────────────────────── */
-@media (max-width: 480px) {}
+@media (max-width: 480px) {
+  /* ── Global ── */
+  section, #skills, #certificacoes, #contato {
+    padding: 2rem 1rem;
+  }
 
-/* ── Header ── */
+  /* ── Header ── */
+  section>a>h1 { font-size: 14px; }
+  section>nav { gap: 15px; }
+  section>nav a { font-size: 13px; }
 
+  /* ── Seção Sobre ── */
+  #text-intro>h1 { font-size: 2.5rem; }
+  #text-intro>h2 { font-size: 1.5rem; }
 
-/* ── Seção Sobre ── */
+  /* ── Cards de Skills ── */
+  #skills>h2 { font-size: 2rem; margin-left: 0; }
+  .card1 ul, .card2 ul, .card3 ul, .card4 ul {
+    grid-template-columns: 1fr; /* Empilha os cards menores das linguagens */
+  }
 
+  /* ── Certificações ── */
+  #certificacoes>h1 { font-size: 2rem; margin-left: 0; }
 
-/* ── Cards de Skills ── */
-
-
-
-/* ── Contato ── */
-
-
-/* ── Footer ── */
+  /* ── Contato ── */
+  #contato>h1 { font-size: 2rem; }
+  
+  .info-cards {
+    height: auto;
+    padding: 15px 0;
+  }
+  .info-cards>h1, .info-cards>h2, .info-cards>h3 {
+    font-size: 0.85rem;
+    word-break: break-word; /* Evita que o email quebre a div do card para os lados */
+    margin-right: 10px;
+  }
+  
+  .formulario {
+    padding: 1rem;
+    margin-top: 20px;
+  }
+}
