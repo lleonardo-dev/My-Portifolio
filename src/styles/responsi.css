@@ -5,26 +5,31 @@
 
 
 
-/* ============================================================
+/* 
    responsi.css — Media Queries 
    
    Breakpoints:
      • Mobile  : até 480px
      • Tablet  : 481px – 768px
      • Notebook: 769px – 1024px
-   ============================================================ */
+     _______________________________
+    */
 
 
 /* ──────────────────────────────────────────────
    NOTEBOOK / TABLET GRANDE  (≤ 1024px)
 ────────────────────────────────────────────── */
 @media (max-width: 1024px) {
+
   /* ── Cards de Skills ── */
   .container-cards {
     flex-direction: column;
   }
-  
-  .card1, .card2, .card3, .card4 {
+
+  .card1,
+  .card2,
+  .card3,
+  .card4 {
     width: 100%;
     max-width: 100%;
     height: auto;
@@ -34,13 +39,14 @@
   }
 
   /* ── Certificações ── */
-  .contaider-certi {
+  .container-certi {
     grid-template-columns: 1fr;
     margin-left: 0;
     place-items: center;
   }
 
-  .certi1, .certi2 {
+  .certi1,
+  .certi2 {
     width: 100%;
     max-width: 600px;
     height: auto;
@@ -51,15 +57,17 @@
   .contato-wrapper {
     gap: 2rem;
   }
-  
-  .info-cards, .formulario {
+
+  .info-cards,
+  .formulario {
     width: 100%;
     max-width: 100%;
     box-sizing: border-box;
     height: auto;
   }
 
-  form>.box-form>input, #digite-form>input {
+  form>.box-form>input,
+  #digite-form>input {
     width: 100%;
     box-sizing: border-box;
   }
@@ -71,21 +79,30 @@
    TABLET  (≤ 768px)
 ────────────────────────────────────────────── */
 @media (max-width: 768px) {
+  html {
+    scroll-padding-top: 50px;
+    /* Compensa a altura maior do menu empilhado em telas menores */
+  }
+
   /* ── Global ── */
-  #skills, #certificacoes, #contato {
+  #skills,
+  #certificacoes,
+  #contato {
     padding: 3rem 2rem;
   }
 
   /* ── Header ── */
-  .header > section {
+  .header>section {
     flex-direction: column;
     justify-content: center;
   }
+
   section>a>h1 {
     left: 0;
     top: 0;
     margin-top: 20px;
   }
+
   section>nav {
     top: 0;
     margin-left: 0;
@@ -93,42 +110,80 @@
     justify-content: center;
     flex-wrap: wrap;
   }
+
   header {
     padding-bottom: 20px;
   }
 
   /* ── Seção Sobre ── */
-  #text-intro>h1 { font-size: 3.5rem; }
-  #text-intro>h2 { font-size: 2rem; }
-  #text-intro>p { font-size: 1rem; }
-  
-  .firstbuttom {
-    left: 0;
+  #text-intro>h1 {
+    font-size: 3.5rem;
+  }
+
+  #text-intro>h2 {
+    font-size: 2rem;
+  }
+
+  #text-intro>p {
+    font-size: 1rem;
+  }
+
+
+
+  .firstbutton {
+
+
     top: 20px;
-    display: flex;
-    flex-direction: column;
+    display: inline-block;
+
+    align-items: center;
     gap: 15px;
     width: 100%;
     max-width: 400px;
   }
-  .firstbuttom button {
-    width: 100%;
-    right: 0;
-  }
+
 
   /* ── Seção Contato ── */
-  .contato-wrapper {
-    grid-template-columns: 1fr;
+  #contato>h1 {
+    font-size: 2rem;
   }
-  
+
+  .container-info {
+    display: block;
+    align-items: center;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .container-info>a {
+    width: 100%;
+    /* Permite que o card tenha o preenchimento correto sem encolher demais */
+  }
+
+  .info-cards {
+    height: auto;
+    padding: 15px 0;
+  }
+
+  .info-cards>h1,
+  .info-cards>h2,
+  .info-cards>h3 {
+    font-size: 0.85rem;
+    word-break: break-word;
+    margin-right: 10px;
+  }
+
+
   .formulario {
-    position: relative; /* Remove o sticky (fixo) da tela */
+    position: relative;
+    /* Remove o sticky (fixo) da tela */
     top: 0;
     height: auto;
     margin-top: 30px;
     padding: 1.5rem;
   }
-  
+
   #button-form>button {
     width: 100%;
     padding: 15px 0;
@@ -140,42 +195,134 @@
    MOBILE  (≤ 480px)
 ────────────────────────────────────────────── */
 @media (max-width: 480px) {
+  html {
+    scroll-padding-top: 500px;
+    /* Compensa a altura do header no mobile (padding e linha menores) */
+  }
+
+  html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 50px;
+    /* Desconta a altura exata do header (incluindo padding e linha) no desktop */
+  }
+
+
   /* ── Global ── */
-  section, #skills, #certificacoes, #contato {
+  section,
+  #skills,
+  #certificacoes,
+  #contato {
     padding: 2rem 1rem;
   }
 
+  main {
+
+    margin-top: 0px;
+
+  }
+
+  .firstbutton {
+
+    align-items: center;
+
+
+  }
+
+
+  .firstbutton button#falar {
+
+    align-items: center;
+    padding: 20px;
+    margin-left: 4rem;
+
+
+
+  }
+
   /* ── Header ── */
-  section>a>h1 { font-size: 14px; }
-  section>nav { gap: 15px; }
-  section>nav a { font-size: 13px; }
+
+  #sobre {
+
+    padding-top: 1px;
+    margin-top: 1px;
+
+
+
+  }
+
+
+
+  section>a>h1 {
+    font-size: 14px;
+  }
+
+  section>nav {
+    gap: 15px;
+  }
+
+  section>nav a {
+    font-size: 13px;
+  }
 
   /* ── Seção Sobre ── */
-  #text-intro>h1 { font-size: 2.5rem; }
-  #text-intro>h2 { font-size: 1.5rem; }
+  #text-intro>h1 {
+    font-size: 2.5rem;
+  }
+
+  #text-intro>h2 {
+    font-size: 1.5rem;
+  }
 
   /* ── Cards de Skills ── */
-  #skills>h2 { font-size: 2rem; margin-left: 0; }
-  .card1 ul, .card2 ul, .card3 ul, .card4 ul {
-    grid-template-columns: 1fr; /* Empilha os cards menores das linguagens */
+  #skills>h2 {
+    font-size: 2rem;
+    margin-left: 0;
+  }
+
+  .card1 ul,
+  .card2 ul,
+  .card3 ul,
+  .card4 ul {
+    grid-template-columns: 1fr;
+    /* Empilha os cards menores das linguagens */
   }
 
   /* ── Certificações ── */
-  #certificacoes>h1 { font-size: 2rem; margin-left: 0; }
+  #certificacoes>h1 {
+    font-size: 2rem;
+    margin-left: 0;
+  }
 
   /* ── Contato ── */
-  #contato>h1 { font-size: 2rem; }
-  
+  #contato>h1 {
+    font-size: 2rem;
+  }
+
+  .container-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .container-info>a {
+    width: 100%;
+    /* Permite que o card tenha o preenchimento correto sem encolher demais */
+  }
+
   .info-cards {
     height: auto;
     padding: 15px 0;
   }
-  .info-cards>h1, .info-cards>h2, .info-cards>h3 {
+
+  .info-cards>h1,
+  .info-cards>h2,
+  .info-cards>h3 {
     font-size: 0.85rem;
-    word-break: break-word; /* Evita que o email quebre a div do card para os lados */
+    word-break: break-word;
     margin-right: 10px;
   }
-  
+
   .formulario {
     padding: 1rem;
     margin-top: 20px;
